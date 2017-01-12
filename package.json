@@ -4,12 +4,15 @@
   "description": "My website",
   "main": "index.js",
   "scripts": {
-    "deploy": "firebase deploy",
+    "deploy": "node_modules/firebase-tools/bin/firebase deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "krsjoseph"
   ],
   "author": "Krs Joseph",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "firebase-tools": "^3.2.1"
+  }
 }
