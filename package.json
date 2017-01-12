@@ -1,18 +1,26 @@
 {
-  "name": "krs-joseph",
-  "version": "1.0.0",
+  "name": "krsjoseph",
   "description": "My website",
-  "main": "index.js",
+  "version": "1.1.0",
+  "private": true,
+  "devDependencies": {
+    "react-scripts": "0.8.5"
+  },
+  "dependencies": {
+    "firebase-tools": "^3.2.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
   "scripts": {
-    "deploy": "node_modules/firebase-tools/bin/firebase deploy",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "deploy": "yarn build && node_modules/firebase-tools/bin/firebase deploy"
   },
   "keywords": [
     "krsjoseph"
   ],
   "author": "Krs Joseph",
-  "license": "MIT",
-  "dependencies": {
-    "firebase-tools": "^3.2.1"
-  }
+  "license": "MIT"
 }
