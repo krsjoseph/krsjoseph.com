@@ -8,6 +8,11 @@
 lifecycle, from design to implementation. Adept in Object Oriented Programming and always hungry to learn and improve. Experienced
 in business development with a soft spot for start ups and entrepreneurship. Basically I’m an “out of the box” techie who
 is always looking to solve new complex challenges with his technological smarts.">
+
+<script src="https://unpkg.com/react@15/dist/react.min.js"></script>
+<script src="https://unpkg.com/react-dom@15/dist/react-dom.min.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
 </head>
 
 <body>
@@ -32,34 +37,50 @@ is always looking to solve new complex challenges with his technological smarts.
       margin-left: 10.2em
     }
   </style>
-  <h1>Krs Joseph - <small>Developer</small></h1>
-  <p>This site is <em><b>"under construction"</b></em> and <em><b>may</b></em> not ever be completed.</p>
+  <div id="root"></div>
   
-  <div id="wrapper">
-    <img src="./under_construction.gif" alt="">
-    <p>"Under Construction"</p>
-  </div>
-  <p>Currently Lead Developer @ Infotech Caribbean</p>
-  <p>
-    Past
-    <ul>
-      <li>Lead Developer @ <a href="http://medullan.com">Medullan</a></li>
-      <li>CTO/Co-founder @ <a href="http://skedonline.com">SKED</a></li>
-      <li>Developer @ <a href="http://fb.com/alckemi">Alckemi</a></li>
-      <li>Developer @ Caribbean Ideas</li>
-      <li>Developer/Co-founder @ Bunngle & Bunngle Digital</li>
-      <li>Mobile Developer @ Lonsdale Saatchi Saatchi</li>
-    </ul>
-  </p>
-  <p>
-    Find me on:
-    <ul>
-      <li>Twitter: <a href="https://twitter.com/krsjoseph" target="_blank">@krsjoseph</a></li>
-      <li>LinkedIn: <a href="https://tt.linkedin.com/in/krsjoseph" target="_blank">Krs Joseph</a></li>
-      <li>Github: <a href="https://github.com/krsjoseph" target="_blank">@krsjoseph</a></li>
-    </ul>
-  </p>
-  <p>Find the code for this site here: <a href="https://github.com/krsjoseph/krsjoseph.com">Github Repo</a></p>
+  <script type="text/babel">
+    class App extends React.Component{
+      render(){
+        return(
+          <div id="app">
+            <h1>Krs Joseph - <small>Developer</small></h1>
+            <p>This site is <em><b>"under construction"</b></em> and <em><b>may</b></em> not ever be completed.</p>
+            
+            <div id="wrapper">
+              <img src="./under_construction.gif" alt=""/>
+              <p>"Under Construction"</p>
+            </div>
+            <p>Currently Lead Developer @ Infotech Caribbean</p>
+            <p>
+              Past
+              <ul>
+                <li>Lead Developer @ <a href="http://medullan.com">Medullan</a></li>
+                <li>CTO/Co-founder @ <a href="http://skedonline.com">SKED</a></li>
+                <li>Developer @ <a href="http://fb.com/alckemi">Alckemi</a></li>
+                <li>Developer @ Caribbean Ideas</li>
+                <li>Developer/Co-founder @ Bunngle & Bunngle Digital</li>
+                <li>Mobile Developer @ Lonsdale Saatchi Saatchi</li>
+              </ul>
+            </p>
+            <p>
+              Find me on:
+              <ul>
+                <li>Twitter: <a href="https://twitter.com/krsjoseph" target="_blank">@krsjoseph</a></li>
+                <li>LinkedIn: <a href="https://tt.linkedin.com/in/krsjoseph" target="_blank">Krs Joseph</a></li>
+                <li>Github: <a href="https://github.com/krsjoseph" target="_blank">@krsjoseph</a></li>
+              </ul>
+            </p>
+            <p>Find the code for this site here: <a href="https://github.com/krsjoseph/krsjoseph.com">Github Repo</a></p>
+          </div>
+        )
+      }
+    }
+    ReactDOM.render(
+      <App/>,
+      document.getElementById('root')
+    );
+  </script>
 </body>
 
 </html>
