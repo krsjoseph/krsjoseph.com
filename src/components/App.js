@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import Social from './Social'
-import Work from './WorkHistory'
+import WorkHistory from './WorkHistory'
 import Header from './Header'
 import UnderConstruction from './UnderConstruction'
+import CurrentPosition from './CurrentPosition'
+import SubHeader from './SubHeader'
 import './App.css'
 
 class App extends Component {
@@ -10,12 +12,10 @@ class App extends Component {
     return (
       <div id="app">
         <Header name="Krs Joseph" title="Developer"/>
-        <p>This site is <em><b>"under construction"</b></em> and <em><b>may</b></em> not ever be completed.</p>
+        <SubHeader />
         <UnderConstruction />
-        <p>Currently Lead Developer @ Infotech Caribbean</p>
-        <p>Past</p>
-        <Work />
-        <p>Find me on:</p>
+        <CurrentPosition title="Lead Developer" company="Infotech Caribbean" />
+        <WorkHistory />
         <Social />
         <p>Find the code for this site here: <a href="https://github.com/krsjoseph/krsjoseph.com">Github Repo</a></p>
       </div>
